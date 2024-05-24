@@ -1,8 +1,10 @@
 name: Nightly Snapshot
 
 on:
-  schedule:
-  - cron: "3/5 * * * *"
+  workflow_dispatch:
+  push:
+    branches:
+      - main
 
 jobs:
   build:
